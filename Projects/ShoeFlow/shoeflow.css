@@ -1,0 +1,153 @@
+.nav-item::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    /* display: none; */
+    transform: translateX(-110%);
+    transition: all 0.2s linear;
+}
+
+.nav-item:hover:after {
+    transform: translateX(0);
+}
+
+.nav-item:hover{
+    color: red;
+    transition: all 0.3s linear;
+}
+
+.bounce-animation{
+    animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateX(0px);
+    }
+
+    50%{
+        transform: translateX(10px);
+    }
+
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+.primary-button::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50px;
+    width: 150%;
+    height: 100%;
+    background-color: white;
+    border-radius: 200px;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+}
+
+.primary-button:hover::before{
+    transform: translateX(100%);
+}
+
+.primary-button:hover .first-text{
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.primary-button:hover .second-text{
+    top: 15px;
+    opacity: 1;
+}
+
+.logo{
+    filter: invert();
+}
+
+.slide-left-to-right{
+    animation: slide-left-to-right 20s linear  infinite ;
+}
+
+@keyframes slide-left-to-right {
+    from{
+        transform: translateX(-53%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+.card-overlay{
+    background-image: linear-gradient(180deg, rgba(225, 225, 225, 0), #0e0e0e);
+}
+
+.product-card:hover img{
+    scale: 1.1 ;
+    transition: all 0.4s ease-in-out;
+}
+
+.product-detail-card:hover .product-detail-card-overlay{
+    opacity: 1;
+}
+
+.detail-section:hover{
+    color: rgb(0, 0, 0);
+}
+
+.detail-section:hover button{
+    color: white;
+}
+
+.add-to-cart:hover{
+    color: red !important;
+}
+
+.most-selling-card:hover{
+    background-color: white;
+}
+
+.most-selling-card:hover .ms-title{
+    color: black;
+}
+
+.most-selling-card:hover .ms-discount{
+    color: black;
+}
+
+.most-selling-card:hover .first-img{
+    opacity: 0;
+}
+
+.most-selling-card:hover .second-img{
+    opacity: 1;
+}
+
+.most-selling-card:hover .ms-button{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.hover-btn:hover{
+    background-color: red;
+    color: white;
+}
+
+.read-more-btn:hover svg{
+    transform: translateX(8px);
+    
+}
+
+.footer-link:hover div{
+    width: 20px;
+}
+
+.footer-icon:hover{
+    background-color: white;
+    color: red;
+}

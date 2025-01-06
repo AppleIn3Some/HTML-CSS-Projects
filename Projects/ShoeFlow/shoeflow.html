@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeFlow</title>
+    <link rel="stylesheet" href="shoeflow.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0E0E0E] text-white">
+
+    <!-- Navigation Section -->
+        <div class="flex items-center justify-between px-5 py-8">
+            <div>
+                <img class="xl:w-[200px] w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637c824ebd359d735eaa138_Logo%20(1).webp" alt="">
+            </div>
+            <div class="bg-white el:w-[600px] lg:w-[450px] w-[400px] md:block hidden rounded-md py-1 pr-1">
+                <div class="flex pl-8">
+                    <input class="text-black outline-none py-2 w-[100%]" type="text" placeholder="What are you looking for?">
+                    <div class="bg-black px-2 text-white rounded-md flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <div class="flex gap-3 lg:flex hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" color="currentColor"><path d="M17 11.805c0-.346 0-.519.052-.673c.151-.448.55-.621.95-.803c.448-.205.672-.307.895-.325c.252-.02.505.034.721.155c.286.16.486.466.69.714c.943 1.146 1.415 1.719 1.587 2.35c.14.51.14 1.044 0 1.553c-.251.922-1.046 1.694-1.635 2.41c-.301.365-.452.548-.642.655a1.27 1.27 0 0 1-.721.155c-.223-.018-.447-.12-.896-.325c-.4-.182-.798-.355-.949-.803c-.052-.154-.052-.327-.052-.672zm-10 0c0-.436-.012-.827-.364-1.133c-.128-.111-.298-.188-.637-.343c-.449-.204-.673-.307-.896-.325c-.667-.054-1.026.402-1.41.87c-.944 1.145-1.416 1.718-1.589 2.35a2.94 2.94 0 0 0 0 1.553c.252.921 1.048 1.694 1.636 2.409c.371.45.726.861 1.363.81c.223-.018.447-.12.896-.325c.34-.154.509-.232.637-.343c.352-.306.364-.697.364-1.132z"/><path d="M20 10.5V9c0-3.866-3.582-7-8-7S4 5.134 4 9v1.5m16 7c0 4.5-4 4.5-8 4.5"/></g></svg>
+                    <div>
+                        <p class="uppercase	font-bold">need help?</p>
+                        <p class="text-sm font-bold">0123-456-789</p>
+                    </div>
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12q-1.65 0-2.825-1.175T8 8t1.175-2.825T12 4t2.825 1.175T16 8t-1.175 2.825T12 12m-8 8v-2.8q0-.85.438-1.562T5.6 14.55q1.55-.775 3.15-1.162T12 13t3.25.388t3.15 1.162q.725.375 1.163 1.088T20 17.2V20zm2-2h12v-.8q0-.275-.137-.5t-.363-.35q-1.35-.675-2.725-1.012T12 15t-2.775.338T6.5 16.35q-.225.125-.363.35T6 17.2zm6-8q.825 0 1.413-.587T14 8t-.587-1.412T12 6t-1.412.588T10 8t.588 1.413T12 10m0 8"/></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.616 21q-.691 0-1.153-.462T5 19.385V8.615q0-.69.463-1.152T6.616 7H8.5v-.5q0-1.458 1.021-2.479T12 3t2.479 1.021T15.5 6.5V7h1.885q.69 0 1.152.463T19 8.616v10.769q0 .69-.463 1.153T17.385 21zm0-1h10.769q.23 0 .423-.192t.192-.424V8.616q0-.231-.192-.424T17.384 8H15.5v2.5q0 .214-.143.357T15 11t-.357-.143t-.143-.357V8h-5v2.5q0 .214-.143.357T9 11t-.357-.143T8.5 10.5V8H6.616q-.231 0-.424.192T6 8.616v10.769q0 .23.192.423t.423.192M9.5 7h5v-.5q0-1.056-.722-1.778T12 4t-1.778.722T9.5 6.5zM6 20V8z"/></svg>
+
+                
+            </div>
+        </div>
+        <div class="border-y-[1px] border-zinc-700 py-3 px-5">
+            <div class="flex items-center gap-10 lg:justify-center justify-between">
+                <ul class="lg:flex hidden items-center gap-10 justify-center">
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	text-[red]">Home</li>
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	">About us</li>
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	">Shop</li>
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	">Blog</li>
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	">Faq</li>
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	">Contact</li>
+                    <li class="nav-item overflow-hidden pb-1 relative cursor-pointer font-bold	">Pages</li>
+                </ul>
+                <div class="flex items-center gap-5">
+                    <p class="font-bold cursor-pointer hover:text-[red] text-lg">Ongoing Offers</p>
+                    <div class="py-[1px] px-[5px] bg-[red] text-[12px] rounded font-bold relative bounce-animation">
+                        <div class="absolute w-[14px] left-[-5px] h-[14px] top-[3px] z-[2] rotate-[45deg] bg-[red]"></div>
+                        <p class="z-[10] relative">Sale</p>
+                    </div>
+                </div>
+                <svg class="lg:hidden block" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24"><path fill="currentColor" d="M3 18h18v-2H3zm0-5h18v-2H3zm0-7v2h18V6z"/></svg>
+            </div>
+        </div>
+    
+    <!-- Hero Section -->
+        <div class="flex items-center py-24 px-5 lg:flex-row flex-col gap-10">
+            <div class="basis-[50%]">
+                <h1 class="md:text-5xl text-4xl font-bold text-white leading-[1.5] w-[90%]">Step into Greatness with Shoeflow- Your Path to Style</h1>
+                <p class="md:text-3xl text-2xl font-bold text-[red] mt-10 mb-10">Velocity Venture</p>
+                <button class="overflow-hidden py-4 px-10 border-2 border-white relative primary-button text-[red] rounded-md">
+                    <p class="relative transition-all first-text z-[10]">View Products</p>
+                    <p class="absolute transition-all second-text z-[10] text-white opacity-0 top-[40px]">View Products</p>
+                </button>
+            </div>
+            <div class="basis-[50%]">
+                <img class="md:w-[90%] w-full mx-auto" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635ffd5623b2c740b1b5287_7433.webp" alt="">
+            </div>
+        </div>
+
+    <!-- Left to right animation -->
+        <div class="w-full relative overflow-hidden">
+            <div class="flex items-center translate-x-[53%] w-[2500px] justify-between slide-left-to-right">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a4c_customers_7.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a3b_customers_6.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a2f_customers_2.svg" alt="">
+                <img class="logo w-[150px] h-[50px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a18_customers_5.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6643517fedfb373814578b25_bronx.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a2a_customers_8.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435138a524a5ecda258aa9_customers_4.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435138a524a5ecda258a93_customers_9.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a78_customers_1.svg" alt="">
+                <img class="logo w-[150px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66435137a524a5ecda258a5a_customers_3.svg" alt="">
+            </div>
+        </div>
+
+    <!-- Top Products Section -->
+        <div class="px-5 mt-36">
+            <h1 class="text-4xl font-bold border-y-2 py-8 border-white">Our Top <span class="text-[red]">Products</span></h1>
+
+            <div class="xl:h-[100vh] lg:h-[80vh] md:h-[70vh] mt-10 mb-10 grid md:grid-cols-3 grid-cols-1 grid-rows-2 gap-5">
+                <div class="md:h-auto h-[300px] product-card md:row-span-2 flex items-end relative rounded-2xl overflow-hidden hover:border-2 border-white">
+                    <div class="absolute translate-y-[50%] lefft-0 top-0 card-overlay w-full h-full z-[100]"></div>
+                    <img class="absolute object-cover top-0 lefft-0 w-full h-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66362bd482e98a1800962b4d_irene-kredenets-KStSiM1UvPw-unsplash-p-500.jpg" alt="">
+                    <div class="z-[1000] relative pl-10 pb-10">
+                        <p class="text-lg font-bold">Summit Sneakers</p>
+                        <p class="font-semibold">Hottest Deals of The Month</p>
+                    </div>
+                </div>
+                <div class="md:h-auto h-[300px] product-card rounded-2xl flex items-end relative overflow-hidden hover:border-2 border-white">
+                    <div class="absolute translate-y-[50%] lefft-0 top-0 card-overlay w-full h-full z-[100]"></div>
+                    <img class="absolute object-cover top-0 lefft-0 w-full h-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66362bd482e98a1800962be2_zachary-keimig-o_U0kPh7uu0-unsplash-p-500.jpg" alt="">
+                    <div class="z-[1000] relative pl-10 pb-10">
+                        <p class="text-lg font-bold">TurboTrainers</p>
+                        <p class="font-semibold">Grab The Latest Shoe</p>
+                    </div>
+                </div>
+                <div class="md:h-auto h-[300px] product-card md:col-start-2 md:row-start-2 rounded-2xl flex items-end relative overflow-hidden hover:border-2 border-white">
+                    <div class="absolute translate-y-[50%] lefft-0 top-0 card-overlay w-full h-full z-[100]"></div>
+                    <img class="absolute object-cover top-0 lefft-0 w-full h-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66362bd582e98a1800962c48_23442.webp" alt="">
+                    <div class="z-[1000] relative pl-10 pb-10">
+                        <p class="text-lg font-bold">Dapper Derby Elegance</p>
+                        <p class="font-semibold">400+ Products Available</p>
+                    </div>
+                </div>
+                <div class="md:h-auto h-[300px] product-card md:row-span-2 flex items-end relative rounded-2xl overflow-hidden hover:border-2 border-white">
+                    <div class="absolute translate-y-[50%] lefft-0 top-0 card-overlay w-full h-full z-[100]"></div>
+                    <img class="absolute object-cover top-0 lefft-0 w-full h-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66362bd482e98a1800962bb6_mojtaba-fahiminia-t4g1gctAaKk-unsplash-p-500.jpg" alt="">
+                    <div class="z-[1000] relative pl-10 pb-10">
+                        <p class="text-lg font-bold">Refined Oxford Classics</p>
+                        <p class="font-semibold">Imported From USA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Latest Products Section -->
+        <div class="px-5 mt-36">
+            <h1 class="text-4xl font-bold border-y-2 py-8 border-white">Latest <span class="text-[red]">Products</span></h1>
+
+            <div class="mt-10 grid lg:grid-cols-2 grid-cols-1 gap-5 ">
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663573b9b8dd9d235ae4e878_1618.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663573a7f1254726f4d3e34b_freepik-export-20240501185959vjg2-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">VortexPulse</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 180.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">KT1439442</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6637a302c9a19ed3fb520587_1705379.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66356fae0e17c1d06a7fb65a_8693-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">SummitGlide</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 170.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">HI1439442</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66360002b2f1ba975f307870_7652.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635ffd5623b2c740b1b5287_7433.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">Velocity Venture</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 45.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">TL20495921</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66357106ee508571ec3a7b49_975.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635ffaf0edfd934c9d9a69f_9402-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">NovaGrip Blaze</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 95.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">HI1439442</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Product Details Section -->
+        <div class="detail-section px-5 mx-5 mt-36 flex items-center lg:flex-row flex-col border-2 border-white rounded-lg xl:px-10 px-5 py-10 lg:gap-5 gap-10 hover:bg-white transition-all hover:text-black">
+            <!-- left -->
+            <div class="basis-[60%] flex md:flex-row flex-col-reverse items-center gap-5">
+                <div class="xl:basis-[10%] lg:basis-[15%] md:basis-[13%] flex md:flex-col flex-row gap-3">
+                    <div class="border-[1px] border-[red] rounded-md md:h-[70px] w-[60px] overflow-hidden  flex items-center justify-center">
+                        <img class="scale-[0.9]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663573a7f1254726f4d3e34b_freepik-export-20240501185959vjg2-p-800.webp" alt="">
+                    </div>
+                    <div class="border-[1px] border-[black] rounded-md  md:h-[70px] w-[60px] overflow-hidden  flex items-center justify-center">
+                        <img class="scale-[1.3]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663573b9b8dd9d235ae4e878_1618-p-800.webp" alt="">
+                    </div>
+                    <div class="border-[1px] border-[black] rounded-md  md:h-[70px] w-[60px] overflow-hidden flex items-center justify-center">
+                        <img class="scale-[1.3]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6634b563dc3cb7acca7f7544_125768-p-500.webp" alt="">
+                    </div>
+                    <div class="border-[1px] border-[black] rounded-md  md:h-[70px] w-[60px] overflow-hidden flex items-center justify-center overflow-hidden">
+                        <img class="scale-[1.3]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6634b4bc080b4cb609ad7e59_133039-p-800.webp" alt="">
+                    </div>
+                </div>
+                <div class="xl:basis-[90%] lg:basis-[85%] md:basis-[87%]">
+                    <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663573a7f1254726f4d3e34b_freepik-export-20240501185959vjg2-p-800.webp" alt="">
+                </div>
+            </div>
+            <!-- right -->
+            <div class="basis-[40%]">
+                <h1 class="text-3xl font-semibold">VortexPulse</h1>
+                <div class="flex items-center text-[red] mt-3 mb-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>
+                </div>
+                <p class="text-2xl text-[red] font-bold">$ 180.00 USD</p>
+                <p class="leading-[2] mt-4">Journey through the stars with Nebula Nectar, where each step feels like a cosmic dance. These celestial-inspired shoes combine otherworldly aesthetics with earthly comfort. Let Nebula Nectar be your cosmic companion as you explore the universe of fashion.</p>
+                <div class="flex gap-3 mt-4 items-center">
+                    <p class="font-bold text-lg">SKU:</p>
+                    <p class="text-sm font-bold">KT1439442</p>
+                </div>
+                <div class="flex gap-3 mt-4 items-center mb-5">
+                    <p class="font-bold text-lg">Stock:</p>
+                    <p class="text-[red] font-bold uppercase text-sm">available</p>
+                </div>
+                <button class="add-to-cart w-full bg-[red] hover:bg-transparent transition-all font-semibold rounded-md py-3 border-[1px] border-[red]">Add To Cart</button>
+            </div>
+        </div>
+
+    <!-- Most Selling Shoes Section -->
+        <div class="px-5 mt-36">
+            <h1 class="text-4xl font-bold border-y-2 py-8 border-white">Most Selling <span class="text-[red]">Sneakers</span></h1>
+            <!-- grid-container -->
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
+                <div class="pb-7 most-selling-card rounded-md overflow-hidden">
+                    <div class="relative xl:h-[300px] h-[200px] flex items-center justify-center overflow-hidden">
+                        <img class="first-img transition-all duration-[1000ms] w-[90%]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635ffd5623b2c740b1b5287_7433.webp" alt="">
+                        <img class="second-img transition-all w-[100%] h-[100%] opacity-0 absolute top-0 left-0" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66360002b2f1ba975f307870_7652.webp" alt="">
+                    </div>
+                    <div class="flex flex-col items-center mt-8">
+                        <h1 class="text-xl font-semibold ms-title">Velocity Venture</h1>
+                        <div class="flex text-[red] pt-3 pb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <p class="text-xl font-bold text-[red]">$ 45.00 USD</p>
+                            <p class="text-md text-white font-semibold line-through ms-discount">$ 60.00 USD</p>
+                        </div>
+                        <div class="mt-5 translate-y-[20px] opacity-0 ms-button transition-all duration-[500ms]">
+                            <button class="bg-[red] px-3 py-2 text-white font-semibold rounded-md shadow-lg">Add To Cart</button>
+                            <button class="bg-white px-3 py-2 text-black font-semibold rounded-md shadow-lg">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-7 most-selling-card rounded-md overflow-hidden">
+                    <div class="relative xl:h-[300px] h-[200px] flex items-center justify-center overflow-hidden">
+                        <img class="first-img transition-all duration-[1000ms] w-[90%]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663600e4b86c9e9e0dde0da6_620.webp" alt="">
+                        <img class="second-img transition-all w-[100%] h-[100%] opacity-0 absolute top-0 left-0" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663600ea1fb4e27207ded41d_620.webp" alt="">
+                    </div>
+                    <div class="flex flex-col items-center mt-8">
+                        <h1 class="text-xl font-semibold ms-title">Serene Sole</h1>
+                        <div class="flex text-[red] pt-3 pb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <p class="text-xl font-bold text-[red]">$ 100.00 USD</p>
+                            <p class="text-md text-white font-semibold line-through ms-discount">$ 120.00 USD</p>
+                        </div>
+                        <div class="mt-5 translate-y-[20px] opacity-0 ms-button transition-all duration-[500ms]">
+                            <button class="bg-[red] px-3 py-2 text-white font-semibold rounded-md shadow-lg">Add To Cart</button>
+                            <button class="bg-white px-3 py-2 text-black font-semibold rounded-md shadow-lg">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pb-7 most-selling-card rounded-md overflow-hidden">
+                    <div class="relative xl:h-[300px] h-[200px] flex items-center justify-center overflow-hidden">
+                        <img class="first-img transition-all duration-[1000ms] w-[90%]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635ffaf0edfd934c9d9a69f_9402-p-800.webp" alt="">
+                        <img class="second-img transition-all w-[100%] h-[100%] opacity-0 absolute top-0 left-0" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66357106ee508571ec3a7b49_975.webp" alt="">
+                    </div>
+                    <div class="flex flex-col items-center mt-8">
+                        <h1 class="text-xl font-semibold ms-title">NovaGrip Blaze</h1>
+                        <div class="flex text-[red] pt-3 pb-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>
+                        </div>
+                        <div class="flex items-center gap-5">
+                            <p class="text-xl font-bold text-[red]">$ 95.00 USD</p>
+                            <p class="text-md text-white font-semibold line-through ms-discount">$ 120.00 USD</p>
+                        </div>
+                        <div class="mt-5 translate-y-[20px] opacity-0 ms-button transition-all duration-[500ms]">
+                            <button class="bg-[red] px-3 py-2 text-white font-semibold rounded-md shadow-lg">Add To Cart</button>
+                            <button class="bg-white px-3 py-2 text-black font-semibold rounded-md shadow-lg">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Featured Sneakers -->
+        <div class="px-5 mt-36">
+            <h1 class="text-4xl font-bold border-y-2 py-8 border-white">Our Featured <span class="text-[red]">Products</span></h1>
+
+            <!-- ပြင်ရန် -->
+            <div class="flex justify-center">
+                    <div class="flex flex-row gap-3 mt-10">
+                    <div class="hover-btn transition-all flex items-center justify-center py-4 px-10 bg-white text-black font-semibold text-xl rounded-xl">Sneakers</div>
+                    <div class="hover-btn transition-all flex items-center justify-center py-4 px-10 bg-white text-black font-semibold text-xl rounded-xl">Boots</div>
+                    <div class="hover-btn transition-all flex items-center justify-center py-4 px-10 bg-white text-black font-semibold text-xl rounded-xl">Formal</div>
+                    <div class="hover-btn transition-all flex items-center justify-center py-4 px-10 bg-white text-black font-semibold text-xl rounded-xl">Turfs</div>
+                    <div class="hover-btn transition-all flex items-center justify-center py-4 px-10 bg-white text-black font-semibold text-xl rounded-xl">Loafers</div>
+                    <div class="hover-btn transition-all flex items-center justify-center py-4 px-10 bg-white text-black font-semibold text-xl rounded-xl">Keats</div>
+                </div>
+            </div>
+
+            <div class="mt-10 grid sm:grid-cols-1 lg:grid-cols-2 gap-5 ">
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663533882f2ec6473082c576_23442%20(1).webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635f4230edfd934c9d0317b_734-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">Rogue Rhythm</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 210.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">KT1439442</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66357373d28010a7daf3b1ee_101530.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635f411d9ad814454dd2c7c_101530-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">SprintWave</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 180.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">HI1439442</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6634b4b3e3e6c6a94fe8cbe3_freepik-export-20240501192955bUMv-p-2000.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635f3fcd61c1c33bd74d356_freepik-export-20240501193003uRG1-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">UrbanFlex</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 135.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">TL20495921</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative md:py-24 py-10 product-detail-card rounded-md overflow-hidden">
+                    <div class="product-detail-card-overlay opacity-0 absolute transition-all flex items-end justify-center pb-10 top-0 left-0 w-full h-full">
+                        <img class="absolute top-0 left-0 w-full h-full object-cover" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/663533a48300c65ce41b5168_8388.webp" alt="">
+                        <div class="relative flex z-[10] gap-5">
+                            <button class="py-2 px-5 bg-[red] text-white font-semibold rounded-md shadow-2xl">Add To Cart</button>
+                            <button class="py-2 px-5 bg-white text-black font-semibold rounded-md shadow-2xl">View Details</button>
+                        </div>
+                    </div>
+                    <div class="flex md:items-center items-start md:flex-row flex-col gap-10">
+                        <div class="lg:basis-[50%] basis-[60%]">
+                            <img src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6635f434532f0f2a056376f7_8389-p-500.webp" alt="">
+                        </div>
+                        <div class="lg:basis-[50%] basis-[40%]">
+                            <h1 class="text-2xl font-semibold">Eclipse Stride</h1>
+                            <div class="flex items-center text-[red] mt-3 mb-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="m22 9.24l-7.19-.62L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27L18.18 21l-1.63-7.03zM12 15.4V6.1l1.71 4.04l4.38.38l-3.32 2.88l1 4.28z"/></svg>                            </div>
+                            <p class="text-[red] font-bold xl:text-xl text-lg">$ 95.00 USD</p>
+                            <p class="font-semibold text-lg my-5">SKU: <span class="text-[14px]">HI1439442</span></p>
+                            <p class="font-semibold text-lg">Stock: <span class="text-[red] text-[14px] font-semibold uppercase">available</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Review Section -->
+        <div class="px-5 mt-36">
+            <div class="flex flex-col items-center">
+                <h1 class="text-4xl font-bold text-white">Review From Clients</h1>
+                <p class="mt-4 leading-[1.5] xl:w-[50%] lg:w-[70%] w-full text-center text-[#d3d3d3]">"See what our valued customers have to say about their ShoeFlow experience! From tech enthusiasts to professionals and digital nomads</p>
+                <div class="flex items-center gap-7 mt-10">
+                    <div class="sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] shrink-0 rounded-full overflow-hidden border-2 border-white p-[2px]">
+                        <img class="w-full h-full rounded-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11e5_portrait-bearded-young.webp" alt="">
+                    </div>
+                    <div class="sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] md:block hidden translate-y-[50%] shrink-0 rounded-full overflow-hidden border-2 border-white p-[2px]">
+                        <img class="w-full h-full rounded-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11cb_joanna-nix-walkup-h2pnXHMz8YM-unsplash.webp" alt="">
+                    </div>
+                    <div class="sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] shrink-0 rounded-full overflow-hidden border-2 border-white p-[2px]">
+                        <img class="w-full h-full rounded-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11e3_young-happy-smiling-african-american-guy-yellow-hoodie-heard-very-funny-joke-laughed.webp" alt="">
+                    </div>
+                    <div class="sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] md:block hidden translate-y-[50%] shrink-0 rounded-full overflow-hidden border-2 border-white p-[2px]">
+                        <img class="w-full h-full rounded-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11e4_young-pretty-young-woman-.webp" alt="">
+                    </div>
+                    <div class="sm:w-[100px] sm:h-[100px] w-[70px] h-[70px] shrink-0 rounded-full overflow-hidden border-2 border-white p-[2px]">
+                        <img class="w-full h-full rounded-full" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/66312dcf103b5edc9ccc11c8_studio-portrait-.webp" alt="">
+                    </div>
+                </div>
+
+                <img class="mt-24 w-[50px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6638a93aaf78024f5ca09315_quote.webp" alt="">
+                <h1 class="text-2xl mt-2 text-center">Billy Mars</h1>
+                <p class="mt-3 mb-5 font-semibold">Tech Enthusiast</p>
+                <p class="xl:w-[50%] lg:w-[70%] w-full leading-[1.5] text-[#d3d3d3] font-semibold text-lg text-center">Shoeflow is a game-changer! Their shoes aren't just footwear; they're an expression of individuality and style. Every time I slip into a pair of Shoeflow shoes, I feel like I'm stepping into my own personal spotlight. Comfort, quality, and fashion all in one – Shoeflow has truly redefined what it means to walk with confidence.</p>
+                <div class="flex items-center text-[#FDB72F] my-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="currentColor" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z"/></svg>
+                </div>
+
+                <div class="xl:w-[70%] w-[80%] h-[2px] bg-white"></div>
+            </div>
+        </div>
+
+    <!-- Blog Section -->
+        <div class="px-5 mt-36">
+            <h1 class="text-4xl font-bold text-white text-center">Our Blogs</h1>
+            <p class="xl:w-[50%] lg:w-[70%] w-full leading-[1.5] text-center text-[#d3d3d3] mx-auto mt-4 mb-10">Explore the cutting-edge world of technology with ElectronicZ's latest blogs! From in-depth product reviews to insightful discussions on emerging trends.</p>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 text-black gap-5">
+                <div class="rounded-lg overflow-hidden bg-white">
+                    <div class="lg:h-[250px] h-[210px] overflow-hidden">
+                        <img class="w-full h-full object-cover hover:scale-[1.2] transition-all duration-[600ms]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6634e49a68f6e5864f368aea_65eefdae5da2cdd10edf1c39_nathan-dumlao-KEniowKfX3k-unsplash.webp" alt="">
+                    </div>
+                    <div class="py-5 px-8">
+                        <div class="flex md:items-center items-start md:flex-row flex-col gap-3">
+                            <button class="bg-[red] text-white py-2 px-4 rounded-md text-sm font-semibold hover:text-white hover:bg-black transition-all">Shoe Care</button>
+                            <p class="text-md font-semibold">May 3, 2024</p>
+                        </div>
+                        <h1 class="text-2xl font-bold my-5 cursor-pointer hover:text-[red] transition-all">Trendy Steps: Unveiling Seasonal Shoe Must-Haves</h1>
+                        <div class="w-full h-[1px] bg-[red]"></div>
+                        <div class="flex items-center gap-2 mt-5 cursor-pointer hover:text-black text-[red] transition-all read-more-btn">
+                            <p class="font-semibold text-sm transition-all">Read More</p>
+                            <svg class="transition-all" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg overflow-hidden bg-white">
+                    <div class="lg:h-[250px] h-[210px] overflow-hidden">
+                        <img class="w-full h-full object-cover hover:scale-[1.2] transition-all duration-[600ms]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/6634e49937f4eb81495e2eda_65b6838c5a37c967e1579ae5_jakob-owens-Np_nvRuhpUo-unsplash.webp" alt="">
+                    </div>
+                    <div class="py-5 px-8">
+                        <div class="flex md:items-center items-start gap-3 md:flex-row flex-col">
+                            <button class="bg-[red] text-white py-2 px-4 rounded-md text-sm font-semibold hover:text-white hover:bg-black transition-all">Fashion</button>
+                            <p class="text-md font-semibold">May 3, 2024</p>
+                        </div>
+                        <h1 class="text-2xl font-bold my-5 cursor-pointer hover:text-[red] transition-all">Sneakers to Stilettos: Exploring Iconic Shoe Styles</h1>
+                        <div class="w-full h-[1px] bg-[red]"></div>
+                        <div class="flex items-center gap-2 mt-5 cursor-pointer hover:text-black text-[red] transition-all read-more-btn">
+                            <p class="font-semibold text-sm transition-all">Read More</p>
+                            <svg class="transition-all" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg overflow-hidden bg-white">
+                    <div class="lg:h-[250px] h-[210px] overflow-hidden">
+                        <img class="w-full h-full object-cover hover:scale-[1.2] transition-all duration-[600ms]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1148/66328da5412d399902db3d47_65eefda14deca004b7330fdc_matias-ilizarbe-HRYENP2Hfyc-unsplash.jpeg" alt="">
+                    </div>
+                    <div class="py-5 px-8">
+                        <div class="flex md:items-center items-start gap-3 md:flex-row flex-col">
+                            <button class="bg-[red] text-white py-2 px-4 rounded-md text-sm font-semibold hover:text-white hover:bg-black transition-all">Brand Spotlight</button>
+                            <p class="text-md font-semibold">May 3, 2024</p>
+                        </div>
+                        <h1 class="text-2xl font-bold my-5 cursor-pointer hover:text-[red] transition-all">Step into Style: Your Guide to Perfect Shoes</h1>
+                        <div class="w-full h-[1px] bg-[red]"></div>
+                        <div class="flex items-center gap-2 mt-5 cursor-pointer hover:text-black text-[red] transition-all read-more-btn">
+                            <p class="font-semibold text-sm transition-all">Read More</p>
+                            <svg class="transition-all" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="currentColor" d="M8.025 22L6.25 20.225L14.475 12L6.25 3.775L8.025 2l10 10z"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Contact Section -->
+        <div class="px-5 mt-36">
+            <div class="bg-[red] rounded-3xl py-16 md:px-20 px-5 relative">
+                <div class="lg:w-[50%] w-[100%]">
+                    <h1 class="text-4xl font-bold leading-[1.5]">Celebrate July with Discounts on All Products!</h1>
+                    <button class="mt-7 overflow-hidden py-4 px-10 border-2 border-white relative primary-button text-[red] rounded-md">
+                        <p class="relative transition-all first-text z-[10]">Contact Us Now</p>
+                        <p class="absolute transition-all second-text z-[10] text-white opacity-0 top-[40px]">Contact Us Now</p>
+                    </button>
+                </div>
+                <img class="lg:absolute right-[50px] bottom-0 xl:h-[120%] lg:h-[110%] md:h-[100%] lg:w-auto md:w-[70%] w-full mx-auto mt-16" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637a262f0d25c8c15fe3a16_freepik-export-20240504085045ooNY-p-500.webp" alt="">
+            </div>
+        </div>
+        <div class="px-5 mt-36">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3">
+                <div class="rounded-md bg-white xl:px-8 px-3 py-4 flex items-center justify-center">
+                    <div class="flex items-center gap-4 text-black">
+                        <img class="w-[60px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637c338383397773a52e430_delivery-truck.webp" alt="">
+                        <div>
+                            <h1 class="font-bold">Free Delivery</h1>
+                            <p class="text-sm">Free shipping on all order</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-md bg-white xl:px-8 px-3 py-4 flex items-center justify-center">
+                    <div class="flex items-center gap-4 text-black">
+                        <img class="w-[60px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637c338c9a19ed3fb6d2f7f_24-hours-support.webp" alt="">
+                        <div>
+                            <h1 class="font-bold">ONLINE SUPPORT 24/7</h1>
+                            <p class="text-sm">Support online 24 hours a day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-md bg-white xl:px-8 px-3 py-4 flex items-center justify-center">
+                    <div class="flex items-center gap-4 text-black">
+                        <img class="w-[60px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637c33888c8673f480546bd_guarantee-certificate.webp" alt="">
+                        <div>
+                            <h1 class="font-bold">MONEY RETURN</h1>
+                            <p class="text-sm">Support online 24 hours a day</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-md bg-white xl:px-8 px-3 py-4 flex items-center justify-center">
+                    <div class="flex items-center gap-4 text-black">
+                        <img class="w-[60px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637c339272a8a15d1e5b732_credit-card.webp" alt="">
+                        <div>
+                            <h1 class="font-bold">SECURE PAYMENT</h1>
+                            <p class="text-sm">Free shipping on all order</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Footer Section -->
+        <div class="px-5 mt-36">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 ">
+                <div class="lg:col-span-1 md:col-span-2">
+                    <img class="w-[200px]" src="https://cdn.prod.website-files.com/66312dcf103b5edc9ccc1113/6637c824ebd359d735eaa138_Logo%20(1).webp" alt="">
+                    <p class="mt-10 text-[17px] text-[#d3d3d3]">Step into style and comfort with ShoeFlow, where every stride tells a story. From sleek sneakers to sophisticated loafers, we offer a curated collection to elevate your footwear game.</p>
+                </div>
+                <div class="grid md:justify-start">
+                    <h1 class="font-semibold text-xl mb-5">Menu</h1>
+                    <ul class="flex flex-col gap-5">
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Home</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">About</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Blog</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Shop</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Contact</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid md:justify-center justify-start">
+                    <h1 class="font-semibold text-xl mb-5">Support</h1>
+                    <ul class="flex flex-col gap-5">
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">About Us</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">FAQ</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Shop</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Log-In</p>
+                        </li>
+                        <li class="flex items-center gap-2 cursor-pointer footer-link">
+                            <div class="w-0 h-[2px] transition-all duration-[500ms] bg-[red]"></div>
+                            <p class="font-bold">Licensing</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h1 class="font-semibold text-xl mb-5">Find Us</h1>
+                    <div class="border-[1px] rounded-lg py-3 px-4 flex gap-4 mb-5">
+                        <div class="border-[1px] border-white py-2 px-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 22q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12v1.45q0 1.475-1.012 2.513T18.5 17q-.875 0-1.65-.375t-1.3-1.075q-.725.725-1.638 1.088T12 17q-2.075 0-3.537-1.463T7 12t1.463-3.537T12 7t3.538 1.463T17 12v1.45q0 .65.425 1.1T18.5 15t1.075-.45t.425-1.1V12q0-3.35-2.325-5.675T12 4T6.325 6.325T4 12t2.325 5.675T12 20h5v2zm0-7q1.25 0 2.125-.875T15 12t-.875-2.125T12 9t-2.125.875T9 12t.875 2.125T12 15"/></svg>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold">Email:</h1>
+                            <p class="text-md font-semibold text-[#d3d3d3]">NX@company.com</p>
+                        </div>
+                    </div>
+
+                    <div class="border-[1px] rounded-lg py-3 px-4 flex gap-4">
+                        <div class="border-[1px] border-white py-2 px-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M22 17.002a6 6 0 0 1-4.713 5.86l-.638-1.914A4 4 0 0 0 19.465 19H17a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2h2.938a8.001 8.001 0 0 0-15.876 0H7a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-5C2 6.477 6.477 2 12 2s10 4.477 10 10zM20 17v-4h-3v4zM4 13v4h3v-4z"/></svg>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold">Phone:</h1>
+                            <p class="text-md font-semibold text-[#d3d3d3]">(414) 687 - 5892</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full h-[1px] bg-[#3f3f46] mt-10"></div>
+
+        <div class="flex items-center justify-between my-5 px-5 md:flex-row flex-col md:gap-0 gap-6">
+            <p class="text-sm font-semibold text-[#d3d3d3] text-center">Copyright © ShoeFlow-NX | Designed by Nexoy |
+                <span class="text-white">Powered by Webflow.com</span></p>
+            <div class="flex gap-5">
+                <div class="footer-icon transition-all w-[40px] h-[40px] border-[0.8px] border-[#3f3f46] rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M13 10h3v3h-3v7h-3v-7H7v-3h3V8.745c0-1.189.374-2.691 1.118-3.512Q12.234 3.999 13.904 4H16v3h-2.1c-.498 0-.9.402-.9.899z"/></svg>
+                </div>
+                <div class="footer-icon transition-all w-[40px] h-[40px] border-[0.8px] border-[#3f3f46] rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+                </div>
+                <div class="footer-icon transition-all w-[40px] h-[40px] border-[0.8px] border-[#3f3f46] rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/></svg>
+                </div>
+                <div class="footer-icon transition-all w-[40px] h-[40px] border-[0.8px] border-[#3f3f46] rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="-4.5 -2 24 24"><path fill="currentColor" d="M6.17 13.097c-.506 2.726-1.122 5.34-2.95 6.705c-.563-4.12.829-7.215 1.475-10.5c-1.102-1.91.133-5.755 2.457-4.808c2.86 1.166-2.477 7.102 1.106 7.844c3.741.774 5.269-6.683 2.949-9.109C7.855-.272 1.45 3.15 2.238 8.163c.192 1.226 1.421 1.598.491 3.29C.584 10.962-.056 9.22.027 6.897C.159 3.097 3.344.435 6.538.067c4.04-.466 7.831 1.527 8.354 5.44c.59 4.416-1.823 9.2-6.142 8.855c-1.171-.093-1.663-.69-2.58-1.265"/></svg>
+                </div>
+            </div>
+        </div>
+
+    <!-- End -->
+</body>
+</html>
