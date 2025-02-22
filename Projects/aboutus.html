@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="shortcut icon" href="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66e805d00e2de27020dee8e6_glowflow-favicon.png" type="image/x-icon">
+    
+    <!-- css file link -->
+    <link rel="stylesheet" href="glowflow.css">
+
+    <!-- JavaScript file link -->
+    <script src="script.js"></script>
+
+    <!-- font style link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Elsie+Swash+Caps:wght@400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yuji+Mai&display=swap" rel="stylesheet">
+
+    <!-- tailwindcss link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-container font-para">
+        <!-- Top Nav Bar -->
+        <div class="nav-top-bar md:py-[18px] py-[10px] bg-[#FBEADE] w-full">
+            <div class="flex lg:flex-row flex-col w-full justify-between lg:gap-0 md:gap-[20px] sm:gap-[10px] gap-[8px] items-center md:px-[20px]">
+                <div class="flex flex-row items-center gap-[20px]">
+                    <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="M15.12 5.32H17V2.14A26 26 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73"/></svg>
+                    <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"/><path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011"/></g></svg>
+                    <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="m17.687 3.063l-4.996 5.711l-4.32-5.711H2.112l7.477 9.776l-7.086 8.099h3.034l5.469-6.25l4.78 6.25h6.102l-7.794-10.304l6.625-7.571zm-1.064 16.06L5.654 4.782h1.803l10.846 14.34z"/></svg>
+                    <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" fill="currentColor"/></svg>
+                </div>
+
+                <div class="flex flex-row items-center md:gap-[10px] gap-[5px] relative overflow-hidden md:w-[450px] sm:w-[380px] w-[280px]">
+                    <button class="arrow left-arrow arrow-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M10 21.308L.692 12L10 2.692l1.064 1.064L2.819 12l8.244 8.244z"/></svg></button>
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">Glow with our products, now 20% off!</div>
+                            <div class="carousel-slide">Transform your skincare routine tod</div>
+                            <div class="carousel-slide">Healthy skin, happy you</div>
+                        </div>
+                    </div>
+                    <button class="arrow right-arrow arrow-btn"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m8.006 21.308l-1.064-1.064L15.187 12L6.942 3.756l1.064-1.064L17.314 12z"/></svg></button>
+                </div>
+
+                <div>
+                    <div class="flex flex-row gap-[5px] cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M12.942 18H11.5q-3.132 0-5.316-2.183T4 10.504t2.183-5.317T11.498 3q1.566 0 2.93.586q1.364.585 2.383 1.604t1.604 2.379T19 10.5q0 2.658-1.33 4.985t-3.436 3.913q-.211.116-.413.133t-.402-.089t-.321-.276t-.127-.408zm-1.406-2.429q.306 0 .52-.216t.213-.523t-.216-.52t-.523-.214t-.52.216t-.214.523t.217.52t.523.214M9.459 8.202q.174.067.347-.009t.283-.245q.205-.339.582-.54q.377-.2.868-.2q.736 0 1.197.385t.46 1.041q0 .406-.197.76t-.672.829q-.644.627-.925 1.076t-.28.872q0 .197.128.336t.31.14t.305-.14q.123-.138.146-.342q.049-.31.335-.688q.287-.379.696-.789q.564-.563.807-1.062t.243-.999q0-1.029-.71-1.655t-1.805-.626q-.736 0-1.356.359q-.621.358-.932.856q-.11.202-.065.388t.235.253"/></svg>
+                        <div class="text-[14px] text-[#3D3030] cs-service">Help Center</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Nav Bar -->
+        <div class="nav-bottom-bar md:py-[25px] py-[18px]">
+            <div class="flex flex-row items-center justify-between gap-[20px] px-[20px]">
+                <div class="cursor-pointer sm:w-[200px] sm:h-[34px] w-[180px] h-[34px]">
+                    <img class="object-fill
+                    " src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66e8044aad68a57b2a2f68a8_Nav-brand-Logo.svg" alt="">
+                </div>
+
+                <div class="lg:flex flex-row hidden xl:gap-[20px] gap-[8px]">
+                    <a href="./home.html" class="link uppercase font-medium xl:text-[17px] text-[15px] xl:px-[10px] xl:py-[5px] px-[8px] py-[3px]">Home</a>
+                    <a href="" class="link active uppercase font-medium xl:text-[17px] text-[15px] xl:px-[10px] xl:py-[5px]  px-[8px] py-[3px]">About us</a>
+                    <a id="" href="" class="link flex flex-row items-center uppercase font-medium xl:text-[17px] text-[15px] xl:px-[10px] xl:py-[5px]  px-[8px] py-[3px]">
+                        Pages
+                        <svg class="text-[#663130]" xmlns="http://www.w3.org/2000/svg" width="32" height="19" viewBox="0 0 24 24"><path fill="currentColor" d="m12 15.4l-6-6L7.4 8l4.6 4.6L16.6 8L18 9.4z"/></svg>
+                    </a>
+                    <a href="./shop.html" class="link uppercase font-medium xl:text-[17px] text-[15px] xl:px-[10px] xl:py-[5px]  px-[8px] py-[3px]">Shop</a>
+                    <a href="./contactus.html" class="link uppercase font-medium xl:text-[17px] text-[15px] xl:px-[10px] xl:py-[5px]  px-[8px] py-[3px]">Contact us</a>
+                </div>
+
+                
+
+                <div class="flex flex-row items-center xl:gap-[30px] gap-[15px]">
+                    <div class="nav-cart p-[10px] w-[50px] h-[50px] cursor-pointer">
+                        <img class="absolute" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66b1f4d1c18e3680084897e7_Shop-cart.svg" alt="">
+                        <div class="nav-noti relative top-[-19px] right-[-10px]">0</div>
+                    </div>
+    
+                    <div class="lg:flex items-center hidden flex-row gap-[10px] bg-[#663130] xl:py-[12px] xl:px-[30px] px-[24px] py-[10px] nav-button cursor-pointer">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                        <div class="text-[17px] font-medium text-white uppercase">Book now</div>
+                    </div>
+
+                    <div class="bg-[#232B31] lg:hidden block rounded p-[17px]">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="xl:h-[420px] lg:h-[380px] md:h-[330px] h-[228px] bg-[#FBEADE] relative overflow-hidden">
+        <div class="flex justify-center items-center w-full h-full">
+            <div>
+                <div class="md:text-[16px] text-[14px] text-[#663130] text-center uppercase font-medium tracking-[0.8px] care-section-heading mb-[10px]">
+                    <div>Welcome to <span class="py-[3px] px-[6px] bg-[#F9D2B3] leading-[1]">Glowflow</span> </div>
+                </div>
+                <div class="font-heading text-center text-[#3D3030] xl:text-[75px] lg:text-[65px] md:text-[55px] text-[35px] leading-[1]">About Us</div>
+            </div>
+        </div>
+        <img class="absolute top-0 xl:w-[380px] xl:h-[260px] lg:w-[307px] lg:h-[210px] md:w-[230px] md:h-[158px] w-[127px] h-[87px]" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66892baf542d420b9543558b_Banner-01.png" alt="">
+        <img class="absolute right-0 bottom-0 xl:w-[380px] xl:h-[440px] lg:w-[307px] lg:h-[358px] md:w-[230px] md:h-[267px] w-[127px] h-[148px]" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66892baf763b9604605d3bc7_Banner-02.png" alt="">
+    </div>
+
+    <!-- About GlowFLow Section -->
+    <div class="lg:mt-[150px] md:mt-[120px] mt-[80px] mx-[20px]">
+        <div class="flex lg:flex-row flex-col md:gap-[40px] gap-[30px]">
+            <!-- left -->
+            <div class="lg:w-[48%] md:w-[560px] lg:h-[590px] md:h-[580px] h-auto overflow-hidden">
+                <img class="w-full h-full" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d1f57bbf6aea6c0b10b40_About-us-image-p-800.jpg" alt="">
+            </div>
+
+            <!-- right -->
+            <div class="lg:w-[52%] w-[100%]">
+                <div class="md:text-[16px] text-[14px] text-[#663130] uppercase font-medium tracking-[0.8px] care-section-heading mb-[10px]">
+                    <div>About <span class="py-[3px] px-[6px] bg-[#FBEADE] leading-[1]">GlowFlow</span> </div>
+                </div>
+                <div class="font-heading text-[#3D3030] leading-[1.2] xl:text-[50px] lg:text-[46px] md:text-[42px] text-[34px]">Renowned Beauty and Cosmetics Supplier</div>
+                <div class="font-para mt-[20px] text-[#555] md:text-[18px] text-[16px]">Our wide selection of spa, haircare, and skincare important items is expertly made to guarantee you get the glowing appearance you want to be done.</div>
+                <div class="flex md:flex-row flex-col md:gap-[30px] gap-[10px] md:mt-[20px] md:mb-[35px] mt-[12px] mb-[20px] md:py-[24px] py-[18px] md:px-[30px] px-[22px] md:pl-[40px] md:items-center aboutsection-flex-row">
+                    <div>
+                        <div class="flex items-center gap-[10px]">
+                            <div>
+                                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d206ab5c99efeb67de752_About-point-01.svg" alt="">
+                            </div>
+                            <div class="font-para lg:w-[50%] text-[#3D3030] leading-[1.2] lg:text-[22px] md:text-[20px] text-[18px] font-medium">Natural Ingredients</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-[10px]">
+                            <div>
+                                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d2069d963b4f399062ff7_About-point-02.svg" alt="">
+                            </div>
+                            <div class="font-para lg:w-[50%] text-[#3D3030] leading-[1.2] lg:text-[22px] md:text-[20px] text-[18px] font-medium">Exceptional Results</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="font-para w-[98%] leading-[1.5] md:mb-[50px] mb-[30px] text-[#663130] md:text-[18px] text-[16px] font-medium italic pl-[17px] border-l-[3px] border-l-[#663130]">“ With our opulent, superior skincare and cosmetics, discover radiant beauty. With the help of science and nature, discover your greatest self. ”</div>
+                <div class="flex md:flex-row flex-col gap-[30px]  md:items-center">
+                    <div class="flex flex-row items-center gap-[10px] md:w-[221px] h-[56px]  w-[180px] justify-center bg-[#663130] py-[12px] md:px-[30px] px-[15px] nav-button cursor-pointer">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                        <div class="md:text-[16px] text-[14px] font-para font-medium text-white uppercase">Contact us</div>
+                    </div>
+                    <div class="flex gap-[10px]">
+                        <img class="w-[60px] h-[60px] aboutsection-founder-pic" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d22284dcc4fd1cabb7e73_About-author-image.jpg" alt="">
+                        <div class="flex flex-col">
+                            <div class="font-para leading-[1.3] text-[#555] lg:text-[25px] md:text-[22px] text-[20px] font-bold">Emma Rose</div>
+                            <div class="font-para leading-[1.3] text-[#663130] text-[16px]">Founder, CEO</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exclusive Qualities Section -->
+    <div class="lg:mt-[150px] md:mt-[120px] mt-[80px] relative">
+        <div class="lg:w-[65%] w-full">
+            <div class="bg-[#FBEADE] lg:py-[130px] md:py-[100px] py-[80px] px-[20px] w-full">
+                <div>
+                    <div class="md:text-[16px] text-[14px] text-[#663130] uppercase font-medium tracking-[0.8px] care-section-heading mb-[10px]">
+                        <div>top spa <span class="py-[3px] px-[6px] bg-[#F9D2B3] leading-[1]">selection</span> </div>
+                    </div>
+                    <div class="font-heading text-[#3D3030] leading-[1.2] xl:text-[50px] lg:text-[46px] md:text-[42px] text-[34px]">Exclusive Qualities</div>
+                    <div class="font-para xl:w-auto lg:w-[442px] text-[#555] md:text-[18px] text-[16px] mt-[20px]">Exquisite quality, crafted for indulgence and rejuvenation.</div>
+                </div>
+    
+                <div class="my-[30px] xl:w-[580px] lg:w-[442px] md:w-[580px] flex flex-col gap-[20px]">
+                    <div class="border-1 border-[#F9D2B3] py-[20px] px-[18px] flex md:flex-row flex-col md:items-center gap-[15px]">
+                        <div class="service-icon-new-border flex items-center justify-center w-[70.33px] h-[70.33px]">
+                            <div class="service-icon-img-border w-[63px] h-[63px] bg-[#F9D2B3] flex items-center justify-center">
+                                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66e4295b55ebac8cb68b956c_Qualities-card-01.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-heading leading-[1.1] text-[#3D3030] lg:text-[30px] md:text-[28px] text-[24px] mb-[8px] xl:w-auto lg:w-[200px] w-auto">Innovative Formulations</div>
+                            <div class="font-para text-[#555] md:text-[18px] text-[16px]">Cutting-edge mixes for superior skincare results.</div>
+                        </div>
+                    </div>
+                    <div class="border-1 border-[#F9D2B3] py-[20px] px-[18px] flex md:flex-row flex-col md:items-center gap-[15px]">
+                        <div class="service-icon-new-border flex items-center justify-center w-[70.33px] h-[70.33px]">
+                            <div class="service-icon-img-border w-[63px] h-[63px] bg-[#F9D2B3] flex items-center justify-center">
+                                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66e4295b7d027b62e9f9e2a7_Qualities-card-02.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-heading leading-[1.1] text-[#3D3030] lg:text-[30px] md:text-[28px] text-[24px] mb-[8px]">Premium Ingredients</div>
+                            <div class="font-para text-[#555] md:text-[18px] text-[16px]">Luxurious extracts are sourced for optimal repair.</div>
+                        </div>
+                    </div>
+                    <div class="border-1 border-[#F9D2B3] py-[20px] px-[18px] flex md:flex-row flex-col md:items-center gap-[15px]">
+                        <div class="service-icon-new-border flex items-center justify-center w-[70.33px] h-[70.33px]">
+                            <div class="service-icon-img-border w-[63px] h-[63px] bg-[#F9D2B3] flex items-center justify-center">
+                                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66e4295bed16d8286f4a5097_Qualities-card-03.svg" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="font-heading leading-[1.1] text-[#3D3030] lg:text-[30px] md:text-[28px] text-[24px] mb-[8px]">Effective Results</div>
+                            <div class="font-para text-[#555] md:text-[18px] text-[16px]">Every pampering session brings visible changes.</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex xl:flex-row lg:flex-col md:flex-row flex-col gap-[24px]">
+                    <div class="flex flex-row items-center gap-[10px] md:w-[221px] h-[56px]  w-[180px] justify-center bg-[#663130] py-[12px] md:px-[30px] px-[15px] nav-button cursor-pointer">
+                        <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                        <div class="md:text-[16px] text-[14px] font-para font-medium text-white uppercase">Contact us</div>
+                    </div>
+                    <div class="flex flex-row items-center gap-[10px]">
+                        <div class="aboutus-service-call bg-[#F9D2B3] w-[60px] h-[60px] flex items-center justify-center">
+                            <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d2a464dc80e2c2859292b_Qualities-contact.svg" alt="">
+                        </div>
+                        <div>
+                            <div class="font-para text-[#555] md:text-[18px] text-[16px]">Call Anytime</div>
+                            <div class="aboutus-service-call-hover font-para text-[#663130] lg:text-[25px] md:text-[24px] text-[20px] leading-[1.3] font-bold">+33 40 7433 8442</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <img class="absolute bottom-[0px] w-[252px] h-[300px]" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d2bbd2162206e10930c67_Qualities-BG-02.png" alt="">
+    
+            
+                
+                <div class="mt-[80px] ml-[20px] relative lg:hidden block">
+                    <div class="md:w-[708px] md:h-[500px] h-[350px] overflow-hidden">
+                        <video width="708" autoplay loop src="./video/66890a300f53689e466ec921_668d27785d6cd42aed89d9cd_Qualities -video-transcode.mp4"></video>
+                    </div>
+            
+                    <div class="play-button bg-[#663130] md:w-[140px] md:h-[140px] w-[100px] h-[100px] absolute flex items-center justify-center left-[-20px] md:bottom-[175px] bottom-[130px]">
+                        <svg class="text-[#F9D2B3]" xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 24 24"><path fill="currentColor" d="M9 15.714V8.287q0-.368.244-.588q.243-.22.568-.22q.102 0 .213.028q.11.027.211.083l5.843 3.733q.186.13.28.298q.093.167.093.379t-.093.379t-.28.298l-5.843 3.733q-.101.055-.213.083t-.213.028q-.326 0-.568-.22T9 15.714"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute lg:block hidden xl:w-[500px] w-[442px] xl:h-[637px] h-[846px] overflow-hidden xl:bottom-[144px] bottom-[130px] right-[20px]">
+            <video width="500" autoplay loop src="./video/66890a300f53689e466ec921_668d27785d6cd42aed89d9cd_Qualities -video-transcode.mp4"></video>
+        </div>
+
+        <div class="play-button w-[140px] h-[140px] bg-[#663130] lg:flex hidden justify-center items-center absolute z-100 xl:bottom-[392.5px] bottom-[500px] xl:right-[450px] right-[390px]">
+            <svg class="text-[#F9D2B3]" xmlns="http://www.w3.org/2000/svg" width="82" height="82" viewBox="0 0 24 24"><path fill="currentColor" d="M9 15.714V8.287q0-.368.244-.588q.243-.22.568-.22q.102 0 .213.028q.11.027.211.083l5.843 3.733q.186.13.28.298q.093.167.093.379t-.093.379t-.28.298l-5.843 3.733q-.101.055-.213.083t-.213.028q-.326 0-.568-.22T9 15.714"/></svg>
+        </div>
+    </div>
+
+
+    <!-- Essential Section -->
+    <div class="mx-[20px] mt-[100px]">
+        <div class="flex lg:flex-row flex-col gap-[20px]">
+            <div class="lg:w-[50%] relative essential-bg blur-bg">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d2cfb5119f2d66fcc4772_Essential-Card-04-p-800.jpg" alt="">
+                <div class="flex flex-col justify-center lg:p-[60px] p-[20px] absolute w-full h-full top-0 left-0">
+                    <div class="font-para md:text-[18px] text-[16px] text-[#232B31] uppercase font-medium">Combo Offers</div>
+                    <div class="font-heading w-[260px] lg:text-[40px] md:text-[30px] text-[26px] text-[#232b31] leading-[1.2] mt-[10px] lg:mb-[30px] md:mb-[25px] mb-[20px]">Buy 1 Get 1 on Skin Products</div>
+                    <div class="font-para w-[138px] text-[16px] text-[#663130] font-medium leading-[1] py-[12px] px-[28px] aboutus-essential-btn">BUY NOW</div>
+                </div>
+            </div>
+
+
+            
+            <div class="lg:w-[50%] relative essential-bg blur-bg">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d2cfb4c2506396ede8755_Essential-Card-05-p-800.jpg" alt="">
+                <div class="flex flex-col justify-center lg:p-[60px] p-[20px] absolute w-full h-full top-0 left-0">
+                    <div class="font-para md:text-[18px] text-[16px] text-[#232B31] uppercase font-medium">Skin Care</div>
+                    <div class="font-heading w-[260px] lg:text-[40px] md:text-[30px] text-[26px] text-[#232B31] leading-[1.2] mt-[10px] lg:mb-[30px] md:mb-[25px] mb-[20px]">20% Off For Key Makeup!</div>
+                    <div class="font-para w-[138px] text-[16px] text-[#663130] font-medium leading-[1] py-[12px] px-[28px] aboutus-essential-btn">BUY NOW</div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Top Spa Selection Section -->
+    <div class="lg:mt-[150px] md:mt-[100px] mt-[80px] lg:py-[150px] md:py-[120px] py-[80px] px-[20px] bg-[#FBEADE]">
+        <div>
+            <div class="md:text-[16px] text-[14px] text-[#663130] text-center uppercase font-medium tracking-[0.8px] care-section-heading mb-[10px]">
+                <div>top spa <span class="py-[3px] px-[6px] bg-[#F9D2B3] leading-[1]">selection</span> </div>
+            </div>
+            <div class="font-heading text-[#3D3030] leading-[1.2] text-center xl:text-[50px] lg:text-[46px] md:text-[42px] text-[34px]">Exclusive Qualities</div>
+            <div class="flex md:flex-row flex-col md:gap-0 gap-[10px] md:justify-between items-center md:mt-[50px] mt-[25px] md:mb-[40px] mb-[30px]">
+                <div class="font-para text-[#3D3030] lg:text-[25px] md:text-[24px] text-[20px] md:text-start text-center font-medium">Beauty & Makeup Products</div>
+                <div class="flex flex-row items-center gap-[10px] md:w-[200px] h-[56px]  w-[180px] justify-center bg-[#663130] py-[12px] md:px-[20px] px-[15px] nav-button cursor-pointer">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                    <div class="md:text-[16px] text-[14px] font-para font-medium text-white uppercase">shop more</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrivals-right-container lg:basis-[60%] grid md:grid-cols-3  grid-cols-1 md:gap-[20px] gap-[30px] mt-[50px]">
+            <div class="arrivals-card-aboutus cursor-pointer">
+                <div class="relative overflow-hidden">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/66965a8950014b3696424381/66f63f5fece4777177649f9d_Shop-image-04.jpg" alt="">
+                </div>
+
+                <div class="flex flex-col justify-center items-center mt-[20px]">
+                    <div class="text-[#FFCA56] flex mb-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                    </div>
+
+                    <div class="font-para arrivals-title cursor-pointer text-[#555] text-[16px] text-center w-[67px] leading-[1.2] mb-[5px] pb-[3px]">Sunscreen</div>
+
+                    <div class="font-heading arrivals-name cursor-pointer text-[22px] text-[#3D3030] text-center w-[150px] leading-[1.2] mb-[10px] relative">Sun Protection
+                        <div class="absolute bg-[#663130] h-[2px] w-0"></div>
+                    </div>
+
+                    <div class="font-para md:text-[18px] text-[16px] text-[#3D3030] flex lg:flex-row flex-col gap-[10px] mb-[40px]">
+                        <div>$ 85.04 USD</div>
+                        <div class="line-through">$ 167.04 USD</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrivals-card-aboutus cursor-pointer">
+                <div class="relative overflow-hidden">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/66965a8950014b3696424381/66f63ef67ca60b58f0843b71_Shop-image-03.jpg" alt="">
+                </div>
+
+                <div class="flex flex-col justify-center items-center mt-[20px]">
+                    <div class="text-[#FFCA56] flex mb-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                    </div>
+
+                    <div class="font-para arrivals-title cursor-pointer text-[#555] text-[16px] text-center w-[67px] leading-[1.2] mb-[5px] pb-[3px]">Toners</div>
+
+                    <div class="font-heading arrivals-name cursor-pointer text-[22px] text-[#3D3030] text-center w-[160px] leading-[1.2] mb-[10px] relative">Mascara - Black
+                        <div class="absolute bg-[#663130] h-[2px] w-0"></div>
+                    </div>
+
+                    <div class="font-para md:text-[18px] text-[16px] text-[#3D3030] flex lg:flex-row flex-col gap-[10px] mb-[40px]">
+                        <div>$ 40.97 USD</div>
+                        <div class="line-through">$ 338.85 USD</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrivals-card-aboutus cursor-pointer">
+                <div class="relative overflow-hidden">
+                    <img class="card-img" src="https://cdn.prod.website-files.com/66965a8950014b3696424381/66f63eb30d56b153c37d6a1e_Shop-image-02.jpg" alt="">
+                </div>
+
+                <div class="flex flex-col justify-center items-center mt-[20px]">
+                    <div class="text-[#FFCA56] flex mb-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="m12 17.27l4.15 2.51c.76.46 1.69-.22 1.49-1.08l-1.1-4.72l3.67-3.18c.67-.58.31-1.68-.57-1.75l-4.83-.41l-1.89-4.46c-.34-.81-1.5-.81-1.84 0L9.19 8.63l-4.83.41c-.88.07-1.24 1.17-.57 1.75l3.67 3.18l-1.1 4.72c-.2.86.73 1.54 1.49 1.08z"/></svg>
+                    </div>
+
+                    <div class="font-para arrivals-title cursor-pointer text-[#555] text-[16px] text-center w-[67px] leading-[1.2] mb-[5px] pb-[3px]">Toners</div>
+
+                    <div class="font-heading arrivals-name cursor-pointer text-[22px] text-[#3D3030] text-center w-[190px] leading-[1.2] mb-[10px] relative">Alcohol-Free Toner
+                        <div class="absolute bg-[#663130] h-[2px] w-0"></div>
+                    </div>
+
+                    <div class="font-para md:text-[18px] text-[16px] text-[#3D3030] flex lg:flex-row flex-col gap-[10px] mb-[40px]">
+                        <div>$ 16.49 USD</div>
+                        <div class="line-through">$ 423.94 USD</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Member Section -->
+    <div class="lg:mt-[150px] md:mt-[100px] mt-[80px] px-[20px]">
+        <div>
+            <div class="md:text-[16px] text-[14px] text-[#663130] text-center uppercase font-medium tracking-[0.8px] care-section-heading mb-[10px]">
+                <div>Team <span class="py-[3px] px-[6px] bg-[#FBEADE] leading-[1]">Members</span> </div>
+            </div>
+            <div class="font-heading text-[#3D3030] leading-[1.2] text-center xl:text-[50px] lg:text-[46px] md:text-[42px] text-[34px]">Beauty Care Team</div>
+        </div>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] md:mt-[50px] mt-[30px] w-full">
+            <div class="aboutus-member cursor-pointer">
+                <div class="w-full h-auto relative z-0">
+                    <img class="w-full h-full" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d2fba4a1060f8ca6255df_Team-01.jpg" alt="">
+                    <div class="aboutus-member-social z-10 bg-[#F9D2B3] flex items-center justify-center py-[7px] w-[90%] absolute opacity-[0] xl:left-[19px] lg:left-[16px] md:left-[18px] sm:left-[19.5px] left-[14px] bottom-[0px]">
+                        <div class="flex flex-row items-center sm:gap-[20px] gap-[40px]">
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="M15.12 5.32H17V2.14A26 26 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73"/></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"/><path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011"/></g></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="m17.687 3.063l-4.996 5.711l-4.32-5.711H2.112l7.477 9.776l-7.086 8.099h3.034l5.469-6.25l4.78 6.25h6.102l-7.794-10.304l6.625-7.571zm-1.064 16.06L5.654 4.782h1.803l10.846 14.34z"/></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center pt-[30px]">
+                    <div class="font-heading leading-[1.1] text-[#3D3030] text-[22px] mb-[10px]">Sophia Chen</div>
+                    <div class="font-para text-[#555] text-[16px]">Skincare Specialist</div>
+                </div>
+            </div>
+
+            <div class="aboutus-member cursor-pointer">
+                <div class="w-full h-auto relative z-0">
+                    <img class="w-full h-full" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66a33aadddb6cb225e431a0f_Team-02.jpg" alt="">
+                    <div class="aboutus-member-social z-10 bg-[#F9D2B3] flex items-center justify-center py-[7px] w-[90%] absolute opacity-[0] xl:left-[19px] lg:left-[16px] md:left-[18px] sm:left-[19.5px] left-[14px] bottom-[0px]">
+                        <div class="flex flex-row items-center sm:gap-[20px] gap-[40px]">
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="M15.12 5.32H17V2.14A26 26 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73"/></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"/><path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011"/></g></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="m17.687 3.063l-4.996 5.711l-4.32-5.711H2.112l7.477 9.776l-7.086 8.099h3.034l5.469-6.25l4.78 6.25h6.102l-7.794-10.304l6.625-7.571zm-1.064 16.06L5.654 4.782h1.803l10.846 14.34z"/></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center pt-[30px]">
+                    <div class="font-heading leading-[1.1] text-[#3D3030] text-[22px] mb-[10px]">Emily Davis</div>
+                    <div class="font-para text-[#555] text-[16px]">Makeup Artist</div>
+                </div>
+            </div>
+
+            <div class="aboutus-member cursor-pointer">
+                <div class="w-full h-auto relative z-0">
+                    <img class="w-full h" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66fb98e83b67b9be147586b8_Team-03.jpg" alt="">
+                    <div class="aboutus-member-social z-10 bg-[#F9D2B3] flex items-center justify-center py-[7px] w-[90%] absolute opacity-[0] xl:left-[19px] lg:left-[16px] md:left-[18px] sm:left-[19.5px] left-[14px] bottom-[0px]">
+                        <div class="flex flex-row items-center sm:gap-[20px] gap-[40px]">
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="M15.12 5.32H17V2.14A26 26 0 0 0 14.26 2c-2.72 0-4.58 1.66-4.58 4.7v2.62H6.61v3.56h3.07V22h3.68v-9.12h3.06l.46-3.56h-3.52V7.05c0-1.05.28-1.73 1.76-1.73"/></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"/><path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011"/></g></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path fill="currentColor" d="m17.687 3.063l-4.996 5.711l-4.32-5.711H2.112l7.477 9.776l-7.086 8.099h3.034l5.469-6.25l4.78 6.25h6.102l-7.794-10.304l6.625-7.571zm-1.064 16.06L5.654 4.782h1.803l10.846 14.34z"/></svg>
+                            <svg class="sc-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="27" viewBox="0 0 24 24"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096a1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277c-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387c2.704 0 3.203 1.778 3.203 4.092v4.71z" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center pt-[30px]">
+                    <div class="font-heading leading-[1.1] text-[#3D3030] text-[22px] mb-[10px]">Olivia Adams</div>
+                    <div class="font-para text-[#555] text-[16px]">Spa Manager</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Section -->
+    <div class="lg:mt-[150px] md:mt-[100px] mt-[80px] xl:h-[605px] lg:h-[590px] h-[700px]">
+        <div class="flex lg:flex-row flex-col w-full h-full">
+            <div class="lg:basis-[40%] w-full md:h-full h-[300px] letter-bg-img">
+            </div>
+            <div class="lg:basis-[60%] lg:py-0 md:py-[100px] py-[80px] bg-[#F9D2B3] flex flex-col items-center justify-center">
+                <div class="mb-[15px] ">
+                    <div class="font-para text-[#663130] md:text-[16px] text-[14px] tracking-[0.8px] leading-[1] font-medium uppercase">Join <span class="py-[3px] px-[6px] bg-[#FBEADE] leading-[1]">Newsletter</span> </div>
+                </div>
+                <div class="font-heading xl:text-[50px] lg:text-[46px] md:text-[42px] text-[34px] text-[#3D3030] text-center leading-[1.2] xl:w-[60%] md:w-[75%] w-[90%] md:mb-[30px] mb-[20px]">Subscribe for Latest Updates & News</div>
+                <input class="font-para lg:w-[70%] md:w-[80%] w-[90%] text-[18px] border-1 border-[#ebb081] md:p-[15px] p-[10px] bg-white md:mb-[20px] mb-[10px]" type="text" placeholder="Enter your email">
+                <div class="flex flex-row items-center gap-[10px] md:w-[220px] w-[180px] items-center justify-center bg-[#663130] py-[12px] px-[30px] nav-button cursor-pointer">
+                    <svg class="text-white" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                    <div class="md:text-[18px] text-[14px] font-para font-medium text-white uppercase">Subscribe</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Section -->
+    <div class="lg:mx-[20px] md:mx-[60px] sm:mx-[35px] mx-[30px] my-[30px]">
+        <div class="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-[15px]">
+            <div class="social-info lg:h-[184px] md:h-[300px] sm:h-[320px] h-[265px] relative overflow-hidden">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668b67e0cd57736f5cc602b9_Product-social-01-p-500.jpg" alt="">
+                <div class="social-info-link absolute top-[80px] opacity-[0] w-full h-full bg-[#F9D2B3] flex flex-col items-center justify-center">
+                    <div class="font-para xl:text-[25px] text-[22px] text-center uppercase mb-[10px]">@instagram</div>
+                    <div class="font-para xl:text-[18px] text-[16px] text-center leading-[1.3] md:w-[166px] sm:w-auto w-[228px]">Follow us on Instagram @glowflow</div>
+                </div>
+            </div>
+
+            <div class="social-info lg:h-[184px] md:h-[300px] sm:h-[320px] h-[265px] relative overflow-hidden">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668b67e07f43e7dc16a2f0eb_Product-social-02-p-500.jpg" alt="">
+                <div class="social-info-link absolute top-[80px] opacity-[0] w-full h-full bg-[#F9D2B3] flex flex-col items-center justify-center">
+                    <div class="font-para xl:text-[25px] text-[22px] text-center uppercase mb-[10px]">@facebook</div>
+                    <div class="font-para xl:text-[18px] text-[16px] text-center leading-[1.3] md:w-[166px] sm:w-auto w-[228px]">Follow us on Facebook @glowflow</div>
+                </div>
+            </div>
+
+            <div class="social-info lg:h-[184px] md:h-[300px] sm:h-[320px] h-[265px] relative overflow-hidden">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668b67e01f29d0dfd5a7e2ea_Product-social-03-p-500.jpg" alt="">
+                <div class="social-info-link absolute top-[80px] opacity-[0] w-full h-full bg-[#F9D2B3] flex flex-col items-center justify-center">
+                    <div class="font-para xl:text-[25px] text-[22px] text-center uppercase mb-[10px]">@pinterest</div>
+                    <div class="font-para xl:text-[18px] text-[16px] text-center leading-[1.3] md:w-[166px] sm:w-auto w-[228px]">Follow us on Pinterest @glowflow</div>
+                </div>
+            </div>
+
+            <div class="social-info lg:h-[184px] md:h-[300px] sm:h-[320px] h-[265px] relative overflow-hidden">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668b67e00cf4b8bb423eba0d_Product-social-04-p-500.jpg" alt="">
+                <div class="social-info-link absolute top-[80px] opacity-[0] w-full h-full bg-[#F9D2B3] flex flex-col items-center justify-center">
+                    <div class="font-para xl:text-[25px] text-[22px] text-center uppercase mb-[10px]">@twitter</div>
+                    <div class="font-para xl:text-[18px] text-[16px] text-center leading-[1.3] md:w-[166px] sm:w-auto w-[228px]">Follow us on Twitter @glowflow</div>
+                </div>
+            </div>
+
+            <div class="social-info lg:h-[184px] md:h-[300px] sm:h-[320px] h-[265px] relative overflow-hidden">
+                <img src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/668b67e0dcccb666750e8c87_Product-social-05-p-500.jpg" alt="">
+                <div class="social-info-link absolute top-[80px] opacity-[0] w-full h-full bg-[#F9D2B3] flex flex-col items-center justify-center">
+                    <div class="font-para xl:text-[25px] text-[22px] text-center uppercase mb-[10px]">@YouTube</div>
+                    <div class="font-para xl:text-[18px] text-[16px] text-center leading-[1.3] md:w-[166px] sm:w-auto w-[228px]">Follow us on YouTube @glowflow</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- footer Contact -->
+    <div class="">
+        <div class="w-full flex md:flex-row flex-col justify-between items-center bg-[#232B31]">
+            <div class="font-para footer-text-color xl:text-[25px] text-center w-full lg:text-[22px] text-[18px] text-white lg:py-[75px] md:py-[40px] py-[10px] xl:px-[60px] lg:px-[60px] px-[30px] md:border-r-[1px] md:border-b-0 border-b-[1px] border-[#555]">+33 40 7433 8442</div>
+            <div class="font-para footer-text-color xl:text-[25px] text-center w-full lg:text-[22px] text-[18px] text-white lg:py-[75px] md:py-[40px] py-[10px] xl:px-[60px] lg:px-[60px] px-[30px] md:border-r-[1px] md:border-b-0 border-b-[1px] border-[#555]">info@glowflow.com</div>
+            <div class="font-para footer-text-color xl:text-[25px] text-center w-full lg:text-[22px] text-[18px] text-white lg:py-[75px] md:py-[40px] py-[10px] xl:px-[60px] lg:px-[60px] px-[30px] md:border-r-[1px] md:border-[#555]">Main Street, London UK</div>
+        </div>
+    </div>
+
+    <div class="bg-[#283036] text-white">
+       <div class="mx-[20px] py-[80px]">
+        <div class="flex md:flex-row flex-col md:gap-[70px] gap-[20px]">
+            <div class="xl:basis-[28%] basis-[45%]">
+                <div>
+                    <img class="mb-[20px]" src="https://cdn.prod.website-files.com/66890a300f53689e466ec921/66e8044a08503ae4dcc85466_Footer-Brand-Logo.svg" alt="">
+                    <div class="text-[18px] font-para">Discover Beauty's Ultimate Care and Wellness.</div>
+                </div>
+
+                <div class="md:mt-[30px] mt-[15px] md:mb-[40px] mb-[20px] flex flex-col gap-[10px]">
+                    <div class="font-para md:text-[25px] text-[20px] leading-[1.2]">Open Hours</div>
+                    <div class="font-para md:text-[18px] text-[16px]">Sunday to Friday - 08:00 - 20:00</div>
+                </div>
+
+                <div class="flex items-center">
+                    <div class="p-[10px] border-1 border-[#F9D2B3] footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+                    </div>
+                    <div class="p-[10px] border-1 border-[#F9D2B3] footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M14.5 2.75c-2.861 0-5.25 2.389-5.25 5.25v1.75H6.5a.25.25 0 0 0-.25.25v4c0 .138.112.25.25.25h2.75V21c0 .138.112.25.25.25h4a.25.25 0 0 0 .25-.25v-6.75h2.75a.25.25 0 0 0 .242-.19l1-4a.25.25 0 0 0-.242-.31h-3.75V8a.76.76 0 0 1 .75-.75h3a.25.25 0 0 0 .25-.25V3a.25.25 0 0 0-.25-.25z"/></svg>
+                    </div>
+                    <div class="p-[10px] border-1 border-[#F9D2B3] footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><g fill="currentColor"><path d="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z"><animate fill="freeze" attributeName="d" dur="0.4s" values="M1 2h2.5L3.5 2h-2.5zM5.5 2h2.5L7.2 2h-2.5z;M1 2h2.5L18.5 22h-2.5zM5.5 2h2.5L23 22h-2.5z"/></path><path d="M3 2h5v0h-5zM16 22h5v0h-5z"><animate fill="freeze" attributeName="d" begin="0.4s" dur="0.4s" values="M3 2h5v0h-5zM16 22h5v0h-5z;M3 2h5v2h-5zM16 22h5v-2h-5z"/></path><path d="M18.5 2h3.5L22 2h-3.5z"><animate fill="freeze" attributeName="d" begin="0.5s" dur="0.4s" values="M18.5 2h3.5L22 2h-3.5z;M18.5 2h3.5L5 22h-3.5z"/></path></g></svg>
+                    </div>
+                    <div class="p-[10px] border-1 border-[#F9D2B3] footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M18.72 4H5.37A1.31 1.31 0 0 0 4 5.25v13.38A1.41 1.41 0 0 0 5.37 20h13.35A1.34 1.34 0 0 0 20 18.63V5.25A1.23 1.23 0 0 0 18.72 4M9 17.34H6.67v-7.13H9ZM7.89 9.13A1.18 1.18 0 0 1 6.67 7.9a1.18 1.18 0 0 1 1.24-1.23A1.18 1.18 0 0 1 9.13 7.9a1.18 1.18 0 0 1-1.24 1.23m9.45 8.21H15v-3.9c0-.93-.33-1.57-1.16-1.57a1.25 1.25 0 0 0-1.17.84a1.4 1.4 0 0 0-.08.57v4.06h-2.3v-7.13h2.3v1a2.32 2.32 0 0 1 2.1-1.21c1.51 0 2.65 1 2.65 3.13Z"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:basis-[20%] basis-[15%]">
+                <div>
+                    <div class="font-para md:text-[25px] text-[20px] mb-[10px]">Pages</div>
+                    <div class="flex flex-col gap-[5px]">
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Home</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">About Us</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Blog</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Shop</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Services</div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:basis-[20%] basis-[15%]">
+                <div>
+                    <div class="font-para md:-[25px] text-[20px] mb-[10px]">Utility</div>
+                    <div class="flex flex-col gap-[5px]">
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Style Guide</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Licenses</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Changelog</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Protected</div>
+                        <div class="font-para md:text-[18px] text-[16px] footer-link">Not Found</div>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:basis-[32%] basis-[25%] lg:block hidden">
+                <div class="font-para text-[25px] mb-[10px]">Beauty Updates</div>
+                <div class="font-para text-[18px]">Stay informed: Join our newsletter today!</div>
+                <div class="w-full mt-[10px] mb-[25px] border-1 border-[#F9D2B3]">
+                    <input class="font-para w-full bg-[#232B31] py-[20px] px-[30px] text-white" type="text" placeholder="Enter your email">
+                </div>
+                <div class="flex flex-row items-center gap-[10px] w-[210px] items-center justify-center bg-white py-[14px] px-[10px] footer-mail-button cursor-pointer">
+                    <svg class="text-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                    <div class="md:text-[18px] text-[14px] font-para font-medium text-black uppercase">Get started</div>
+                </div>
+            </div>
+        </div>
+        <div class="md:w-[35%] w-full block lg:hidden mt-[30px]">
+            <div class="font-para md:text-[25px] text-[20px] mb-[10px]">Beauty Updates</div>
+            <div class="font-para md:text-[18px] text-[16px]">Stay informed: Join our newsletter today!</div>
+            <div class="w-full mt-[10px] mb-[25px] border-1 border-[#F9D2B3]">
+                <input class="font-para w-full bg-[#232B31] md:py-[20px] md:px-[30px] py-[8px] px-[10px] text-white" type="text" placeholder="Enter your email">
+            </div>
+            <div class="flex flex-row items-center gap-[10px] w-[210px] items-center justify-center bg-white py-[14px] px-[10px] footer-mail-button cursor-pointer">
+                <svg class="text-black" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m13.692 17.308l-.707-.72l4.088-4.088H5v-1h12.073l-4.088-4.088l.707-.72L19 12z"/></svg>
+                <div class="md:text-[18px] text-[14px] font-para font-medium text-black uppercase">Get started</div>
+            </div>
+        </div>
+       </div>
+    </div>
+</body>
+</html>

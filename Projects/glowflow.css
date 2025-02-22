@@ -1,0 +1,531 @@
+:root {
+    --font--paragraph: "Work Sans", sans-serif;
+    --color--content-color: #555;
+    --font--heading: "Elsie Swash Caps", sans-serif;
+    --color--secondary-color: #3d3030;
+    --color--primary-color: #663130;
+    --background--primary-bakground: #f9d2b3;
+    --background--secondary-background: #fbeade;
+    --color--transparent: #fff0;
+    --color--white: white;
+    --color--black: black;
+    --color--dark-color: #232b31;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+.drop-down{
+    display: none;
+}
+
+.sc-icon:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s linear;
+}
+
+.active{
+    border-bottom: 1px solid #663130;
+    color: #663130;
+}
+
+.link:hover{
+    border-bottom: 1px solid #663130;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.nav-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.3px solid #F9D2B3;
+    border-radius: 50%;
+}
+
+.nav-noti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: #663130;
+    font-size: 11px;
+    color: white;
+}
+
+.cs-service:hover{
+    text-decoration-color: #663130;
+    text-decoration: underline;
+    color: #663130;
+    transition: all 0.3s linear;
+}
+
+.nav-button:hover{
+    background-color: #3D3030;
+    transition: all 0.3s linear;
+}
+
+.nav-button:hover svg{
+    transform: translateX(5px);
+    transition: all 0.3s linear;
+}
+
+
+.carousel-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 450px;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    text-align: center;
+    font-family: var(--font--paragraph);
+    font-size: 15px;
+    color: var(--color--content-color);
+}
+
+.arrow-btn {
+    color: #3D3030;
+}
+
+.hero-sub-header{
+    font-size: 16px;
+    font-family: var(--font--paragraph);
+    font-weight: 500;
+}
+
+.hero-main-header{
+    font-family: var(--font--heading);
+}
+
+.hero-button{
+    border: 1px solid #d2c1ae;
+}
+
+.hero-button:hover{
+    background-color: #3D3030;
+    transition: all 0.3s linear;
+    border: 1px  solid #3D3030;
+    transition: all 0.3s linear;
+    
+}
+
+.hero-button:hover svg{
+    transform: translateX(5px);
+    transition: all 0.3s linear;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.hero-button:hover div{
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.hero-bottom-info{
+    font-family: var(--font--paragraph);
+}
+
+/* Pure Beauty Care Section */
+
+.care-section-title{
+    font-family: var(--font--heading);
+}
+
+.care-section-heading{
+    font-family: var(--font--paragraph);
+}
+
+.care-card-title{
+    font-family: var(--font--paragraph);
+}
+
+.care-card-name{
+    font-family: var(--font--heading);
+}
+
+.care-card-name:hover div{
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.care-card-shop{
+    font-family: var(--font--paragraph);
+}
+
+.care-card-shop:hover{
+    border-bottom: 1px solid #3D3030;
+    transition: all 0.2s linear;
+}
+
+.care-card-img-container:hover .care-img{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.care-card-item-container{
+    border: 1px solid #f9d2b3;
+}
+
+.care-card-item-container:hover{
+    background-color: #FBEADE;
+    transition: all 0.2s linear;
+}
+
+/* About Us Section */
+.font-para{
+    font-family: var(--font--paragraph);
+}
+
+.font-heading{
+    font-family: var(--font--heading);
+}
+
+.about-us-info{
+    background-image: linear-gradient(90deg, var(--background--secondary-background), #fff0);
+    padding: 20px 20px 20px 10px;
+}
+
+.about-us-info-hour{
+    border-top: 1px solid #f9d2b3;
+    border-bottom: 1px solid #f9d2b3;
+}
+
+.about-us-rotate{
+    transform: rotate(-90deg);
+}
+
+/* Essential Container */
+
+.essential-img-bg-one{
+    background: url();
+}
+
+.essential-button{
+    border: 1px solid #232b31;
+}
+
+.essential-button:hover{
+    background-color: #232b31;
+    color: white;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.essential-button-two{
+    border: 1px solid white;
+}
+
+.essential-button-two:hover{
+    background-color: #232b31;
+    border-color: #232b31;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.essential-button-three{
+    border: 1px solid #663130;
+}
+
+.essential-button-three:hover{
+    background-color: #232b31;
+    border-color: #232b31;
+    color: white;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.blur-bg:hover img{
+    filter: blur(3px);
+    transition: all 0.5s linear;
+}
+
+/* Service Section */
+
+@media (min-width:768px) {
+    
+.service-item-left{
+    background-image: linear-gradient(90deg, #0000 14%, #fbeade);
+    border-radius: 95px;
+}
+
+.service-item-right{
+    background-image: linear-gradient(90deg, #fbeade, #fff0 86%);
+    border-radius: 95px;
+}
+
+}
+
+@media (max-width:450px){
+
+.service-item-left{
+    background-image: linear-gradient(90deg, #fbeade, #fff0 86%);
+    border-radius: 20px;
+}
+
+.service-item-right{
+    background-image: linear-gradient(90deg, #fbeade, #fff0 86%);
+    border-radius: 20px;
+}
+
+}
+
+.service-icon-border{
+    border: 1px dashed #663130;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.service-icon-img:hover{
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.service-icon-img{
+    border-radius: 50%;
+}
+
+.service-title:hover{
+    color: #663130;
+    border-bottom: 2px solid #663130;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.service-center-img{
+    background-image: url("https://cdn.prod.website-files.com/66890a300f53689e466ec921/670e578567aed8a4fc92b3f7_Services-image.jpg");
+    background-position: center;
+}
+
+.service-center-container{
+    padding: 13px 10px;
+    border-radius: 170px;
+    border: 1px solid #f9d2b3;
+}
+
+.middle-img{
+    border-radius: 170px;
+}
+
+/* New Arrivals Section */
+
+.arrivals-button:hover{
+    background-color: #FBEADE;
+    transition: all 0.3s linear;
+}
+
+.arrivals-button:hover svg{
+    transform: translateX(5px);
+    transition: all 0.3s linear;
+}
+
+.arrivals-left-container{
+    background-image: url("https://cdn.prod.website-files.com/66890a300f53689e466ec921/670e5d24c25f5e8de59b209b_Arrivals-BG-p-1080.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.arrivals-name:hover div{
+    width: 100%;
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.arrivals-title:hover{
+    border-bottom: 1px solid #555;
+    transition: all 0.2s linear;
+}
+
+.arrivals-card:hover .card-img{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.arrivals-card:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: all 0.3s linear;
+}
+
+/* Newsletter Section */
+
+.letter-bg-img{
+    background-image: url("https://cdn.prod.website-files.com/66890a300f53689e466ec921/668d0e7e70257a4e68f8f005_CTA-image-p-800.jpg");
+    background-position: center;
+}
+
+/* Customer Praise Section */
+
+.review-rounded{
+    border-radius: 50%;
+}
+
+.review-rounded:hover {
+    background-color: #663130;
+    transition: all 0.3s linear;
+}
+
+.review-rounded:hover svg{
+    color: white;
+    transition: all 0.3s linear;
+}
+
+/* Latest News Posts Section */
+
+.latest-posts-button:hover svg{
+    transform: translateX(5px);
+    transition: all 0.1s linear;
+}
+
+.latest-posts-heading:hover{
+    text-decoration: underline;
+    color: #663130;
+    transition: all 0.3s linear;
+}
+
+.latest-posts-title:hover{
+    color: black;
+    text-decoration: underline;
+    transition: all 0.3s linear;
+}
+
+.latest-posts-img:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.follow-us-item:hover .follow-us-opacity{
+    opacity: 1;
+    top: 0px;
+}
+
+/* Footer */
+.footer-social:hover {
+    background-color: #F9D2B3;
+    color: #323D45;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: #F9D2B3;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.footer-mail-button:hover svg{
+    transform: translateX(5px);
+    transition: all 0.3s linear;
+}
+
+
+/* About Us Page */
+.aboutsection-flex-row{
+    border-top: 1px solid #F9D2B3;
+    border-bottom: 1px solid #F9D2B3;
+    background-image: linear-gradient(90deg, var(--background--secondary-background), #fff0);
+}
+
+.aboutsection-founder-pic{
+    border-radius: 50%;
+}
+
+.aboutus-essential-btn{
+    background-color: white;
+}
+
+.aboutus-essential-btn:hover {
+    background-color: #663130;
+    color: white;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.arrivals-card-aboutus:hover .card-img{
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+}
+
+.aboutus-member:hover .aboutus-member-social{
+    opacity: 1;
+    bottom: 20px;
+    transition: all 0.3s linear;
+}
+
+
+.service-icon-img-border{
+    border-radius: 50%;
+}
+
+.service-icon-new-border{
+    border: 1px dashed #663130;
+    border-radius: 100%;
+    padding: 2px;
+}
+
+.aboutus-service-call{
+    border-radius: 50%;
+}
+
+.aboutus-service-call-hover:hover {
+    color: #555;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.play-button{
+    border-radius: 50%;
+}
+
+.play-button:hover {
+    background-color: #3D3030;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.social-info:hover .social-info-link{
+    top: 0;
+    opacity: 1;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.input-bg:focus {
+    background-color: #FBEADE;
+    border-color: black;
+}
+
+.contact-send-message-btn:hover {
+    background-color: #3D3030;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.faq{
+    border-radius: 50%;
+}
